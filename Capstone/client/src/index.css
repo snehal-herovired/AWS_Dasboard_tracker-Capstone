@@ -58,5 +58,15 @@ margin-left: 5%;
  margin-top: 5%;
   
 }
+.pnf{
+  align-items: center;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 200%;
+  color: rgb(109, 15, 15);
+  margin: 7%;
+  padding: 15%;
+  font-weight: 700;
+}
 
 

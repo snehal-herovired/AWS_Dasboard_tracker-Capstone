@@ -5,8 +5,8 @@ function Header() {
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-          <img src="/images/hero-vired-cobrand-logo.svg" class="css-rw8jrp-Box" style={{width:'180px',height:'30px',marginLeft:"13px",marginBottom:"2px"}}/>
+          <a className="navbar-brand" href="/">
+          <img src="/images/hero-vired-cobrand-logo.svg" class="css-rw8jrp-Box" style={{width:'180px',height:'30px',marginLeft:"13px",marginBottom:"2px"}} alt=""/>
           </a>
           <button
             className="navbar-toggler"
