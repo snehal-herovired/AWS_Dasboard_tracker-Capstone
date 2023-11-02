@@ -1,6 +1,7 @@
 const express= require('express');
 const app = express();
 const cors = require('cors');
+app.use(cors())
 require('dotenv').config();
 app.use(express.json());
 const PORT = process.env.PORT
@@ -24,6 +25,15 @@ AWS.config.update({
 //IAM ROUTER
 const IamUserRouter =require('./routes/IamUser.router')
 app.use('/iamUser',IamUserRouter)
+
+//AUTHENTICATION AND AUTHRORIZATION
+const UserAuth = require('./routes/UserAuth.router')
+app.use('/authentication',UserAuth);
+
+
+//Cost Optimization
+const costController = require('./routes/costOptimization.route')
+app.use('/cost',costController)
 
 app.listen(PORT,()=>{
     console.log(`Server is running on port ${PORT}`);
