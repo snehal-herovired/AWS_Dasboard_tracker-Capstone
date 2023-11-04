@@ -1,4 +1,4 @@
-const express= require('express');
+const express= require('express')
 const app = express();
 const cors = require('cors');
 app.use(cors())
@@ -37,4 +37,5 @@ app.use('/cost',costController)
 
 app.listen(PORT,()=>{
     console.log(`Server is running on port ${PORT}`);
+
 })
