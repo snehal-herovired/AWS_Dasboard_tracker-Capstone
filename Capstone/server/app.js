@@ -32,8 +32,16 @@ app.use('/authentication',UserAuth);
 
 
 //Cost Optimization
-const costController = require('./routes/costOptimization.route')
+const costController = require('./routes/costOptimization.router')
 app.use('/cost',costController)
+
+//Activity Tracking 
+const ActivityRouter= require('./routes/activity.routes');
+app.use('/activity', ActivityRouter);
+
+//Cost Utilization 
+const CostUtilizationRoter = require('./routes/cost.router') 
+app.use('/costUtilization',CostUtilizationRoter);
 
 app.listen(PORT,()=>{
     console.log(`Server is running on port ${PORT}`);

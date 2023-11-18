@@ -3,6 +3,6 @@ const costController = express.Router();
 const {getCostUtilizationForIAMUsers} = require('../controllers/costController');
 
 // costController.get('/cost/root',getRootCost);
-costController.get('/cost/utilization',getCostUtilizationForIAMUsers);
+costController.get('/api/getAll',getCostUtilizationForIAMUsers);
 
 module.exports = costController;

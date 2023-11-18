@@ -3,10 +3,7 @@ const express = require('express');
 
 const router = express.Router();
 
-const { 
-    getRecentActivities, 
-    // getActivityForUser 
-} = require ('../controllers/activity.controller');
+const {getRecentActivities} = require ('../controllers/activity.controller');
  
 
 router.get('/recent', getRecentActivities);
